@@ -4,7 +4,6 @@ services:
     name: focusflow-backend
     env: node
     region: oregon
-    plan: free
     buildCommand: cd server && npm install
     startCommand: cd server && npm start
     envVars:
@@ -22,7 +21,6 @@ services:
   - type: web
     name: focusflow-frontend
     runtime: static
-    plan: free
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
     envVars:
