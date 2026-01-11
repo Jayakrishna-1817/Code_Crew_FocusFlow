@@ -4,7 +4,7 @@ import path from "path";
 import { copyFileSync } from "fs";
 
 // https://vitejs.dev/config/
-export defineConfig(() => ({
+export default defineConfig(() => ({
   base: "/",
   build: {
     outDir: "dist",
